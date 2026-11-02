@@ -212,3 +212,72 @@ footer .dark-button {
 }
 
 /* #endregion Effect */
+
+/* About Me spacing */
+#about {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#about .container {
+    width: 100%;
+}
+
+#about .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about .col-12 {
+    width: 100%;
+}
+
+/* Portfolio spacing */
+#portfolio-grid {
+    display: block;
+    width: 100%;
+    clear: both;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#portfolio-grid .container {
+    width: 100%;
+}
+
+#portfolio-grid .items {
+    width: 100%;
+}
+
+
+/*----------------------------------------------
+Portfolio image visibility fix
+----------------------------------------------*/
+#portfolio-grid .card .image-over {
+    display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#portfolio-grid .card .image-over img {
+    display: block;
+    position: relative;
+    z-index: 1 !important;
+    width: 100%;
+    height: 260px;
+    min-height: 260px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+    visibility: visible;
+}
+
+#portfolio-grid .card .image-over:before {
+    z-index: 2;
+    pointer-events: none;
+}
